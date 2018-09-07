@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,21 +7,24 @@
     <title>Deliverable 1 - Wireframe 7</title>
 </head>
 <body> 
-    <div class="container">                                                                     <!-- BLOCK -->
+    <header>
+        <nav class="nav" role="nav">                                                                            <!-- BLOCK --> 
+            <ul class="nav__links">
+                <li class="nav__link"><a class="link" href="">Link</a></li>                                              <!-- ELEMENT-->
+                <li class="nav__link"><a class="link" href="">Link</a></li>                                              <!-- ELEMENT-->
+                <li class="nav__link"><a class="link" href="">Link</a></li>                                              <!-- ELEMENT-->
+                <li class="nav__link"><a class="link" href="">Link</a></li>                                              <!-- ELEMENT-->
+            </ul>
+        </nav> 
+    </header>                                                                                <!-- ENDBLOCK -->
 
-        <ul class="nav">                                                                            <!-- BLOCK --> 
-            <li class="nav__link"><a href="">Link</a></li>                                              <!-- ELEMENT-->
-            <li class="nav__link"><a href="">Link</a></li>                                              <!-- ELEMENT-->
-            <li class="nav__link"><a href="">Link</a></li>                                              <!-- ELEMENT-->
-            <li class="nav__link"><a href="">Link</a></li>                                              <!-- ELEMENT-->
-        </ul>                                                                                       <!-- ENDBLOCK -->
-
-        <div class="maintitle__holder section--big">                                                <!-- BLOCK --> 
+    <main role="main">
+        <section class="maintitle__holder section--big">                                                <!-- BLOCK --> 
             <h1 class="maintitle__title">Main Title</h1>                                                <!-- ELEMENT-->
-            <a class="maintitle__btn btn btn--light" href="">Click!</a>                                 <!-- ELEMENT-->
-        </div>                                                                                      <!-- ENDBLOCK -->   
-
-        <section class="introduction">                                                              <!-- BLOCK -->
+            <button role="button" class="maintitle__btn btn btn--light">Click!</button>                                 <!-- ELEMENT-->
+        </section>                                                                                      <!-- ENDBLOCK -->   
+    
+        <section role="section" class="introduction">                                                              <!-- BLOCK -->
             <h2 class="introduction__title">Introduction</h2>                                           <!-- ELEMENT-->
             <p class="introduction__text">Lorem ipsum dolor, sit                                        <!-- ELEMENT-->
                 amet consectetur adipisicing elit. Porro ipsum nemo 
@@ -36,56 +40,56 @@
                 voluptatum ipsa. Libero pariatur sapiente enim 
                 deserunt sed nihil omnis ipsa illum?</p>
         </section>                                                                                  <!-- ENDBLOCK -->
-
-        <section class="image-showcase">                                                            <!-- BLOCK -->
-
+    
+        <section role="section" class="image-showcase">                                                            <!-- BLOCK -->
+    
             <h2 class="image-showcase__title">Some Subtitle</h2>                                        <!-- ELEMENT-->
-
+    
             <div class="image-showcasecontainer">                                                           <!-- BLOCK -->
-                <img class="showcasecontainer__image showcasecontainer__image--s" href="" alt="image 1"/>         <!-- ELEMENT-->
-                <img class="showcasecontainer__image showcasecontainer__image--s" href="" alt="image 2"/>         <!-- ELEMENT-->
-                <img class="showcasecontainer__image showcasecontainer__image--s" href="" alt="image 3"/>         <!-- ELEMENT-->
+                <img class="showcasecontainer__image showcasecontainer__image--s" src="" alt="image 1"/>         <!-- ELEMENT-->
+                <img class="showcasecontainer__image showcasecontainer__image--s" src="" alt="image 2"/>         <!-- ELEMENT-->
+                <img class="showcasecontainer__image showcasecontainer__image--s" src="" alt="image 3"/>         <!-- ELEMENT-->
             </div>                                                                                          <!-- ENDBLOCK -->
-
+    
             <div class="image-showcasecontainer">                                                           <!-- BLOCK -->
-                <img class="showcasecontainer__image showcasecontainer__image--l" href="" alt="image 4"/>         <!-- ELEMENT-->
-                <img class="showcasecontainer__image showcasecontainer__image--m" href="" alt="image 5"/>         <!-- ELEMENT-->
+                <img class="showcasecontainer__image showcasecontainer__image--l" src="" alt="image 4"/>         <!-- ELEMENT-->
+                <img class="showcasecontainer__image showcasecontainer__image--m" src="" alt="image 5"/>         <!-- ELEMENT-->
             </div>                                                                                          <!-- ENDBLOCK -->
-
+    
         </section>                                                                                  <!-- ENDBLOCK -->
-
-        <section class="another-subtitle">                                                          <!-- BLOCK -->
-            <h2 class="another-subtitle__title">Another subtitle</h2>                                   <!-- ELEMENT -->
-
-            <div class="another-subtitle__textholder text--left">                                       <!-- BLOCK-->
-                <p class="another-subtitle__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
+    
+        <section role="section" class="articles">                                                          <!-- BLOCK -->
+            <h2 class="articles__title">Another subtitle</h2>                                   <!-- ELEMENT -->
+    
+            <div class="article__textholder text--left">                                       <!-- BLOCK-->
+                <p class="article__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
             </div>                                                                                      <!-- ENDBLOCK -->
-
-            <div class="another-subtitle__textholder text--left">                                       <!-- BLOCK-->
-                <p class="another-subtitle__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
+    
+            <div class="article__textholder text--left">                                       <!-- BLOCK-->
+                <p class="article__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
             </div>                                                                                      <!-- ENDBLOCK -->
-
-            <div class="another-subtitle__textholder text--left">                                       <!-- BLOCK-->
-                <p class="another-subtitle__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
+    
+            <div class="article__textholder text--left">                                       <!-- BLOCK-->
+                <p class="article__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
             </div>                                                                                      <!-- ENDBLOCK -->
-
-            <div class="another-subtitle__textholder text--left">                                       <!-- BLOCK-->
-                <p class="another-subtitle__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
+    
+            <div class="article__textholder text--left">                                       <!-- BLOCK-->
+                <p class="article__text">Lorem ipsum dolor sit amet.</p>                           <!-- ELEMENT-->
             </div>                                                                                      <!-- ENDBLOCK -->
-
-            <div class="another-subtitle__imgcontainer">                                                <!-- BLOCK -->
-                <img class="another-subtitle__img" src="" alt="Right image">                                <!-- ELEMENT -->
+    
+            <div class="article__imgcontainer">                                                <!-- BLOCK -->
+                <img class="article__img" aria-label="This is an image." src="" alt="Right image">                                <!-- ELEMENT -->
             </div>                                                                                      <!-- ENDBLOCK -->
+    
+            <button role="button" class="article__btn btn--dark btn--right">Click me!</button>                <!-- ELEMENT -->
+        </section>
+    </main>                                                                         <!-- ENDBLOCK -->
 
-            <a class="another-subtitle__btn btn--dark btn--right" href="#">Click me!</a>                <!-- ELEMENT -->
-        </section>                                                                                  <!-- ENDBLOCK -->
-
-        <footer class="footer">                                                                     <!-- BLOCK -->
-            <p class="footer__text">                                                                    <!-- ELEMENT-->
-                Chris Meurink
-            </p>
-        </footer>                                                                                       <!-- ENDBLOCK -->
-    </div>                                                                                      <!-- ENDBLOCK -->
+    <footer class="footer" role="contentinfo">                                                                     <!-- BLOCK -->
+        <p class="footer__text">                                                                    <!-- ELEMENT-->
+            Chris Meurink
+        </p>
+    </footer>                                                                                       <!-- ENDBLOCK -->
     
 </body>
 </html>
