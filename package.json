@@ -27,7 +27,8 @@
   },
   "dependencies": {
     "autoprefixer": "^9.1.5",
-    "gulp-eslint": "^2.0.0-rc-3"
+    "gulp-eslint": "^2.0.0-rc-3",
+    "gulp-watch": "^5.0.1"
   },
   "description": ""
 }
