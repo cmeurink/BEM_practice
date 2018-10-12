@@ -1,0 +1,33 @@
+{
+  "name": "deliverable1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmeurink/Deliverable1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmeurink/Deliverable1/issues"
+  },
+  "homepage": "https://github.com/cmeurink/Deliverable1#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-eslint": "^21.0.0",
+    "grunt-sass": "^3.0.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.1.5",
+    "gulp-eslint": "^2.0.0-rc-3"
+  },
+  "description": ""
+}
