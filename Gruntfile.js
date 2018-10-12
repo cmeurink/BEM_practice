@@ -1,6 +1,4 @@
 const sass = require('node-sass');
- 
-// require('load-grunt-tasks')(grunt);
 
 module.exports = (grunt) => {
     grunt.initConfig({
@@ -23,19 +21,22 @@ module.exports = (grunt) => {
         },
         watch: {
             scripts: {
-                files: ['src/**/*.js','src/**/*.scss'],
-                tasks: ['eslint', 'sass'],
+                files: ['src/js/*.js'],
+                tasks: ['eslint'],
                 options: {
-                    spawn: false,
+                  spawn: false,
                 },
             },
-        },
-    })
+            css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
+        }
+    });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-eslint');
     grunt.loadNpmTasks('grunt-contrib-sass');
 
-    grunt.registerTask('watch', ['watch']);
     grunt.registerTask('default', ['eslint', 'sass']);
 };
