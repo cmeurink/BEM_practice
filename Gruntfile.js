@@ -5,7 +5,10 @@ const sass = require('node-sass');
 module.exports = (grunt) => {
     grunt.initConfig({
         eslint: {
-            configFile: '/eslint.json',
+            options: {
+                configFile: '.eslintrc.json',
+            },
+            target: ['src/js/**.js']
         },
         sass: {
             options: {
@@ -34,5 +37,5 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-sass');
 
     grunt.registerTask('watch', ['watch']);
-    grunt.registerTask('default', ['eslint']);
+    grunt.registerTask('default', ['eslint', 'sass']);
 };

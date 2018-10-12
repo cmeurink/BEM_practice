@@ -1,1 +1,1 @@
-var blabla = () => "bla";
+var blabla=()=>"bla";
