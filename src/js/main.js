@@ -1,1 +1,1 @@
-var blabla=()=>"hoi"; window.alert("halo!");
+var blabla=()=>"halo"; window.alert("hallo!"); 

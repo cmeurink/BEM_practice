@@ -2,40 +2,31 @@
 /* ===> import './main.scss'; <=== */
 
 var path = require("path");
-
 module.exports = {
-    watch: true,
+    mode: "development",
     entry: "./src/js/main.js",
     output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js",
-    },
+            filename: "bundle.js"
+        },
+        watch: true,
+        devServer: {
+            inline: true
+        },
+    // Add sass-loader
     module: {
         rules: [
-        {
-            test: /\.js$/,
-            exclude: /node_modules/,
-
-            use: {
-            loader: "eslint-loader",
-            options: { presets: ["es2015"] }
+            {
+                test: /\.scss$/,
+                loaders: ["style", "css", "sass"]
             }
-        },
-        {
-            test: /\.scss$/,
-            exclude: /node_modules/,
-            use: [
-            {
-                loader: "style-loader" // creates style nodes from JS strings
-            },
-            {
-                loader: "css-loader" // translates CSS into CommonJS
-            },
-            {
-                loader: "sass-loader" // compiles Sass to CSS
-            }
-            ]
-        }
         ]
-    } 
-};
+    }
+}
+// module.exports = {
+//     watch: true,
+//     entry: "./src/js/main.js",
+//     output: {
+//         path: path.resolve(__dirname, "dist"),
+//         filename: "bundle.js",
+//     },
+// };
